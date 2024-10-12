@@ -33,7 +33,7 @@ paths:
                   name: "Šilutės bendrovė"
                   holdingNumber: "099589"
                   yearOfFoundation: "2000/06/02"
-                  type: "Koncernas"
+                  type: "Mišrus ūkis"
     post:
       description: "Create a farm"
       tags:
@@ -123,130 +123,166 @@ paths:
       responses:
         '201':
           description: OK
-  /topics/{topicId}/posts/{postId}:
+  /Farms/{farmId}/Fields/{fieldId}:
     parameters:
-      - $ref: '#/components/parameters/topicId'
-      - $ref: '#/components/parameters/postId'
+      - $ref: '#/components/parameters/farmId'
+      - $ref: '#/components/parameters/fieldId'
     get:
-      summary: Get a specific post for a topic
+      summary: Get a specific field for a farm
       tags:
-        - post
-      operationId: getPost
+        - field
+      operationId: GetField
       responses:
         "200":
-          description: A single post
+          description: A single field
     put:
-      summary: Update a post for a topic
+      summary: Update a field for a farm
       tags:
-        - post
-      operationId: updatePost
+        - field
+      operationId: PutField
       responses:
         "200":
-          description: Updated post
+          description: Updated field
     delete:
-      summary: Delete a post for a topic
+      summary: Delete a field for a farm
       tags:
-        - post
-      operationId: deletePost
+        - field
+      operationId: DeleteField
       responses:
         "204":
-          description: Post deleted
-  /topics/{topicId}/posts/{postId}/comments:
+          description: Field deleted
+  /Farms/{farmId}/Fields/{fieldId}/Records:
     parameters:
-      - $ref: '#/components/parameters/topicId'
-      - $ref: '#/components/parameters/postId'
+      - $ref: '#/components/parameters/farmId'
+      - $ref: '#/components/parameters/fieldId'
     get:
-      summary: Get comments for a specific post
+      summary: Get records for a specific field
       tags:
-        - comment
-      operationId: getComments
+        - record
+      operationId: GetRecords
       responses:
         "200":
-          description: List of comments
+          description: List of records
     post:
-      description: "Add a comment for a specific post"
+      description: "Add a record for a specific field"
       tags:
-        - comment
-      operationId: createComment
+        - record
+      operationId: PostRecord
       responses:
         "201":
           description: OK
-  /topics/{id}/posts/{postId}/comments/{commentId}:
+  /farms/{farmId}/Fields/{fieldId}/Records/{recordId}:
     parameters:
-      - $ref: '#/components/parameters/topicId'
-      - $ref: '#/components/parameters/postId'
-      - $ref: '#/components/parameters/commentId'
+      - $ref: '#/components/parameters/farmId'
+      - $ref: '#/components/parameters/fieldId'
+      - $ref: '#/components/parameters/recordId'
     get:
-      summary: Get a specific comment
+      summary: Get a specific record
       tags:
-        - comment
-      operationId: getComment
+        - record
+      operationId: GetRecord
       responses:
         "200":
-          description: A single comment
+          description: A single record
     put:
-      summary: Update a comment
+      summary: Update a record
       tags:
-        - comment
-      operationId: updateComment
+        - record
+      operationId: PutRecord
       responses:
         "200":
-          description: Updated comment
+          description: Updated record
     delete:
-      summary: Delete a comment
+      summary: Delete a record
       tags:
-        - comment
-      operationId: deleteComment
+        - record
+      operationId: DeleteRecord
       responses:
         "204":
-          description: Comment deleted
+          description: Record deleted
 components:
   schemas:
-    topic:
+    Farm:
       type: object
       properties:
         id:
           type: integer
-        title:
+        name:
           type: string
-        description:
+        holdingNumber:
+          type: integer
+        yearOfFoundation:
+          type: date-time
+        type:
           type: string
-    createTopic:
+    CreateFarmRequestDto:
       type: object
       required:
-        - title
-        - description
+        - name
+        - holdingNumber
+        - yearOfFoundation
+        - type
       properties:
-        title:
-          minLength: 2
-          maxLength: 100
-          pattern: "^[a-zA-Z0-9_]+$"  # Only allows letters, numbers, and underscores
+        name:
+          minLength: 5
+          maxLength: 280
           type: string
-        description:
-          minLength: 3
-          maxLength: 500
-          pattern: "^[a-zA-Z0-9_]+$"  # Only allows letters, numbers, and underscores
+        holdingNumber:
+          type: integer
+        yearOfFoundation:
+          type: date-time
+        type:
+          minLength: 5
+          maxLength: 280
           type: string
-    updateTopic:
+    UpdateFarmRequestDto:
       type: object
       properties:
-        description:
+        name:
+          minLength: 5
+          maxLength: 280
           type: string
-    post:
+        holdingNumber:
+          type: integer
+        yearOfFoundation:
+          type: date-time
+        type:
+          minLength: 5
+          maxLength: 280
+          type: string
+    Field:
       type: object
       properties:
         id:
           type: integer
-        title:
+        famrId:
+          type: integer
+        number:
+          type: integer
+        cropGroup:
           type: string
-        body:
+        cropGroupName:
           type: string
-    comment:
+        cropSubgroup:
+          type: string
+        perimeter:
+          type: decimal
+        area:
+          type: decimal
+    Record:
       type: object
       properties:
         id:
           type: integer
-        content:
+        fieldId:
+          type: integer
+        name:
+          type: string
+        type:
+          type: string
+        date:
+          type: date-time
+        description:
           type: string
     problemDetails:
       type: object
@@ -273,18 +309,20 @@ components:
           type: object
           description: A map of detailed errors for every property ([property => error])
   responses:
-    singleTopic:
-      description: A topic
+    singleFarm:
+      description: A farm
       content:
         application/json:
           schema:
             type: object
             items:
-              $ref: "#/components/schemas/topic"
+              $ref: "#/components/schemas/farm"
           example:
             - id: 1
-              title: "OpenAPI Best Practices"
-              description: "Discussion about best practices when using OpenAPI"
+              name: "Jono ūkis"
+              holdingNumber: "012589"
+              yearOfFoundation: "2020/02/05"
+              type: "Gyvulininkystės ūkis"
     unprocessableEntity:
       description: Unprocessable entity response
       content:
@@ -305,30 +343,30 @@ components:
     notFound:
       description: Resource was not found
   parameters:
-    topicId:
-      name: topicId
+    farmId:
+      name: farmId
       in: path
       required: true
       schema:
         type: integer
         minimum: 1
-      description: The unique identifier of the topic
-    postId:
-      name: postId
+      description: The unique identifier of the farm
+    fieldId:
+      name: fieldId
       in: path
       required: true
       schema:
         type: integer
         minimum: 1
-      description: The unique identifier of the post
-    commentId:
-      name: commentId
+      description: The unique identifier of the field
+    recordId:
+      name: recordId
       in: path
       required: true
       schema:
         type: integer
         minimum: 1
-      description: The unique identifier of the comment
+      description: The unique identifier of the record
   
 tags:
   - name: farm
