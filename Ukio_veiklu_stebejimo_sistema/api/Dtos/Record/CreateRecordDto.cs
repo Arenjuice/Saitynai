@@ -19,7 +19,7 @@ namespace api.Dtos.Record
         public string Type { get; set; } = string.Empty;
         [Required]
         [Column(TypeName = "date")] 
-        public DateTime Date { get; set; } = DateTime.Now;
+        public DateOnly Date { get; set; } = DateOnly.MinValue;
         [Required]
         [MinLength(5, ErrorMessage = "Aprašymas negali būti trumpesnis nei 5 simboliai")]
         [MaxLength(280, ErrorMessage = "Aprašymas negali būti ilgenis nei 280 simbolių")]

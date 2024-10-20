@@ -101,7 +101,7 @@ namespace api.Controllers
             
             if (farm == null)
             {
-                return NotFound();
+                return NotFound("Farms does not exist or it contains fields and can not be deleted");
             }
 
             return NoContent();

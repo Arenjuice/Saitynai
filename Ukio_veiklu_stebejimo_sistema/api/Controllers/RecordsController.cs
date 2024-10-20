@@ -123,7 +123,7 @@ namespace api.Controllers
         // DELETE: api/Fields/5
         [HttpDelete]
         [Route("{id:int}")]
-        public async Task<IActionResult> DeleteField([FromRoute] int id, [FromRoute] int fieldId, [FromRoute] int farmId)
+        public async Task<IActionResult> DeleteRecord([FromRoute] int id, [FromRoute] int fieldId, [FromRoute] int farmId)
         {
             if(!ModelState.IsValid)
                 return BadRequest(ModelState);

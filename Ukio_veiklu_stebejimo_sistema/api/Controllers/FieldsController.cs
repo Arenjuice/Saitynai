@@ -130,7 +130,7 @@ namespace api.Controllers
 
             if (field == null)
             {
-                return NotFound("Field does not exist");
+                return NotFound("Field does not exist or it contains records and can not be deleted");
             }
 
             return Ok(field);

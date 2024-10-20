@@ -28,9 +28,9 @@ namespace api.Repository
 
         public async Task<Field?> DeleteAsync(int id, int farmId)
         {
-            var field = await _context.Fields.Where(x => x.FarmId == farmId).FirstOrDefaultAsync(x => x.Id == id);
+            var field = await _context.Fields.Where(x => x.FarmId == farmId).Include(c => c.Records).FirstOrDefaultAsync(x => x.Id == id);
 
-            if (field == null)
+            if (field == null || field.Records.Count > 0)
             {
                 return null;
             }

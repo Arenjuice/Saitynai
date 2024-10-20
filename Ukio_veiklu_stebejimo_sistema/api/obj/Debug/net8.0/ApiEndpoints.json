@@ -1,1 +1,326 @@
-[]
+[
+  {
+    "ContainingType": "api.Controllers.FarmsController",
+    "Method": "GetFarms",
+    "RelativePath": "api/Farms",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api.Controllers.FarmsController",
+    "Method": "PostFarm",
+    "RelativePath": "api/Farms",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "farmDto",
+        "Type": "api.Dtos.Farm.CreateFarmRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api.Controllers.FieldsController",
+    "Method": "GetFields",
+    "RelativePath": "api/Farms/{farmId}/Fields",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "farmId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api.Controllers.FieldsController",
+    "Method": "PostField",
+    "RelativePath": "api/Farms/{farmId}/Fields",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "farmId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "fieldDto",
+        "Type": "api.Dtos.Field.CreateFieldDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api.Controllers.RecordsController",
+    "Method": "GetRecords",
+    "RelativePath": "api/Farms/{farmId}/Fields/{fieldId}/Records",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "farmId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "fieldId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api.Controllers.RecordsController",
+    "Method": "PostRecord",
+    "RelativePath": "api/Farms/{farmId}/Fields/{fieldId}/Records",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fieldId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "recordDto",
+        "Type": "api.Dtos.Record.CreateRecordDto",
+        "IsRequired": true
+      },
+      {
+        "Name": "farmId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api.Controllers.RecordsController",
+    "Method": "GetRecord",
+    "RelativePath": "api/Farms/{farmId}/Fields/{fieldId}/Records/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "farmId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "fieldId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api.Controllers.RecordsController",
+    "Method": "PutRecord",
+    "RelativePath": "api/Farms/{farmId}/Fields/{fieldId}/Records/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "recordDto",
+        "Type": "api.Dtos.Record.UpdateRecordRequestDto",
+        "IsRequired": true
+      },
+      {
+        "Name": "farmId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "fieldId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api.Controllers.RecordsController",
+    "Method": "DeleteRecord",
+    "RelativePath": "api/Farms/{farmId}/Fields/{fieldId}/Records/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "fieldId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "farmId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api.Controllers.FieldsController",
+    "Method": "GetField",
+    "RelativePath": "api/Farms/{farmId}/Fields/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "farmId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "api.Models.Field",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "api.Controllers.FieldsController",
+    "Method": "PutField",
+    "RelativePath": "api/Farms/{farmId}/Fields/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "fieldDto",
+        "Type": "api.Dtos.Field.UpdateFieldRequestDto",
+        "IsRequired": true
+      },
+      {
+        "Name": "farmId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api.Controllers.FieldsController",
+    "Method": "DeleteField",
+    "RelativePath": "api/Farms/{farmId}/Fields/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "farmId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api.Controllers.FarmsController",
+    "Method": "GetFarm",
+    "RelativePath": "api/Farms/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api.Controllers.FarmsController",
+    "Method": "PutFarm",
+    "RelativePath": "api/Farms/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "farmDto",
+        "Type": "api.Dtos.Farm.UpdateFarmRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api.Controllers.FarmsController",
+    "Method": "DeleteFarm",
+    "RelativePath": "api/Farms/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

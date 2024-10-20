@@ -29,19 +29,19 @@ namespace api.Mappers
                 Name = recordDto.Name,
                 Type = recordDto.Type,
                 Description = recordDto.Description,
-                Date = DateTime.Now,
+                Date = recordDto.Date,
                 FieldId = fieldId
             };
         }
 
-        public static Record ToRecordFromUpdate(this UpdateRecordRequestDto fieldDto)
+        public static Record ToRecordFromUpdate(this UpdateRecordRequestDto recordDto)
         {
             return new Record
             {
-                Name = fieldDto.Name,
-                Type = fieldDto.Type,
-                Date = DateTime.Now,
-                Description = fieldDto.Description,
+                Name = recordDto.Name,
+                Type = recordDto.Type,
+                Date = recordDto.Date,
+                Description = recordDto.Description,
             };
         }
     }

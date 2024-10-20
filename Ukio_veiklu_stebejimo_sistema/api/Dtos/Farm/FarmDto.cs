@@ -11,10 +11,8 @@ namespace api.Dtos.Farm
     {
         public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
-        public int HoldingNumber { get; set; }
-
-        [Column(TypeName = "date")] 
-        public DateTime YearOfFoundation { get; set; }
+        public string HoldingNumber { get; set; } = string.Empty;
+        public int YearOfFoundation { get; set; }
 
         public string Type { get; set; } = string.Empty;
         public List<FieldDto>? Fields { get; set; }
