@@ -9028,11 +9028,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\api\\api.csproj",
+      "projectUniqueName": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\api\\api.csproj",
       "projectName": "api",
-      "projectPath": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\api\\api.csproj",
+      "projectPath": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\api\\api.csproj",
       "packagesPath": "C:\\Users\\areni\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\api\\obj\\",
+      "outputPath": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
