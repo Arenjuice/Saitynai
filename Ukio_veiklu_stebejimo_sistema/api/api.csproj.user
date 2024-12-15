@@ -11,5 +11,6 @@
     <WebStackScaffolding_LayoutPageFile />
     <WebStackScaffolding_DbContextTypeFullName>api.Data.ApplicationDBContext</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
+    <NameOfLastUsedPublishProfile>C:\Users\areni\OneDrive - Kaunas University of Technology\Ketvirtas kursas\Saitynai\Saitynai\.github\workflows\UkioAPI.yml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>

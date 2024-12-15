@@ -71,12 +71,19 @@ var app = builder.Build();
 
 using var scope = app.Services.CreateScope();
 
-app.AddAuthApi();
-
 //var dbContext = scope.ServiceProvider.GetRequiredService<ApplicationDBContext>();
+
+if (app.Environment.IsProduction())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<ApplicationDBContext>();
+    dbContext.Database.Migrate();
+
+}
 
 var dbSeeder = scope.ServiceProvider.GetRequiredService<AuthSeeder>();
 await dbSeeder.SeedAsync();
+
+app.AddAuthApi();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
