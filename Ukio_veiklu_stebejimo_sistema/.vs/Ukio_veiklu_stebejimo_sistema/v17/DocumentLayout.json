@@ -3,32 +3,68 @@
   "WorkspaceRootPath": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{437F08C4-9206-4C76-A80D-26C054177A5C}|api\\api.csproj|c:\\users\\areni\\onedrive - kaunas university of technology\\ketvirtas kursas\\saitynai\\ukio_veiklu_stebejimo_sistema\\api\\controllers\\recordscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{437F08C4-9206-4C76-A80D-26C054177A5C}|api\\api.csproj|solutionrelative:api\\controllers\\recordscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{437F08C4-9206-4C76-A80D-26C054177A5C}|api\\api.csproj|c:\\users\\areni\\onedrive - kaunas university of technology\\ketvirtas kursas\\saitynai\\ukio_veiklu_stebejimo_sistema\\api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{437F08C4-9206-4C76-A80D-26C054177A5C}|api\\api.csproj|solutionrelative:api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{437F08C4-9206-4C76-A80D-26C054177A5C}|api\\api.csproj|c:\\users\\areni\\onedrive - kaunas university of technology\\ketvirtas kursas\\saitynai\\ukio_veiklu_stebejimo_sistema\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{437F08C4-9206-4C76-A80D-26C054177A5C}|api\\api.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{437F08C4-9206-4C76-A80D-26C054177A5C}|api\\api.csproj|c:\\users\\areni\\onedrive - kaunas university of technology\\ketvirtas kursas\\saitynai\\ukio_veiklu_stebejimo_sistema\\api\\controllers\\fieldscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{437F08C4-9206-4C76-A80D-26C054177A5C}|api\\api.csproj|solutionrelative:api\\controllers\\fieldscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{437F08C4-9206-4C76-A80D-26C054177A5C}|api\\api.csproj|c:\\users\\areni\\onedrive - kaunas university of technology\\ketvirtas kursas\\saitynai\\ukio_veiklu_stebejimo_sistema\\api\\auth\\authendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{437F08C4-9206-4C76-A80D-26C054177A5C}|api\\api.csproj|solutionrelative:api\\auth\\authendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{437F08C4-9206-4C76-A80D-26C054177A5C}|api\\api.csproj|c:\\users\\areni\\onedrive - kaunas university of technology\\ketvirtas kursas\\saitynai\\ukio_veiklu_stebejimo_sistema\\api\\api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{437F08C4-9206-4C76-A80D-26C054177A5C}|api\\api.csproj|solutionrelative:api\\api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{437F08C4-9206-4C76-A80D-26C054177A5C}|api\\api.csproj|c:\\users\\areni\\onedrive - kaunas university of technology\\ketvirtas kursas\\saitynai\\ukio_veiklu_stebejimo_sistema\\api\\auth\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{437F08C4-9206-4C76-A80D-26C054177A5C}|api\\api.csproj|solutionrelative:api\\auth\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{437F08C4-9206-4C76-A80D-26C054177A5C}|api\\api.csproj|c:\\users\\areni\\onedrive - kaunas university of technology\\ketvirtas kursas\\saitynai\\ukio_veiklu_stebejimo_sistema\\api\\auth\\sessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{437F08C4-9206-4C76-A80D-26C054177A5C}|api\\api.csproj|solutionrelative:api\\auth\\sessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{437F08C4-9206-4C76-A80D-26C054177A5C}|api\\api.csproj|c:\\users\\areni\\onedrive - kaunas university of technology\\ketvirtas kursas\\saitynai\\ukio_veiklu_stebejimo_sistema\\api\\controllers\\recordscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{437F08C4-9206-4C76-A80D-26C054177A5C}|api\\api.csproj|solutionrelative:api\\controllers\\recordscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{437F08C4-9206-4C76-A80D-26C054177A5C}|api\\api.csproj|c:\\users\\areni\\onedrive - kaunas university of technology\\ketvirtas kursas\\saitynai\\ukio_veiklu_stebejimo_sistema\\api\\repository\\fieldrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{437F08C4-9206-4C76-A80D-26C054177A5C}|api\\api.csproj|solutionrelative:api\\repository\\fieldrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{437F08C4-9206-4C76-A80D-26C054177A5C}|api\\api.csproj|c:\\users\\areni\\onedrive - kaunas university of technology\\ketvirtas kursas\\saitynai\\ukio_veiklu_stebejimo_sistema\\api\\models\\field.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{437F08C4-9206-4C76-A80D-26C054177A5C}|api\\api.csproj|solutionrelative:api\\models\\field.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{437F08C4-9206-4C76-A80D-26C054177A5C}|api\\api.csproj|c:\\users\\areni\\onedrive - kaunas university of technology\\ketvirtas kursas\\saitynai\\ukio_veiklu_stebejimo_sistema\\api\\models\\record.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{437F08C4-9206-4C76-A80D-26C054177A5C}|api\\api.csproj|solutionrelative:api\\models\\record.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{437F08C4-9206-4C76-A80D-26C054177A5C}|api\\api.csproj|c:\\users\\areni\\onedrive - kaunas university of technology\\ketvirtas kursas\\saitynai\\ukio_veiklu_stebejimo_sistema\\api\\models\\farm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{437F08C4-9206-4C76-A80D-26C054177A5C}|api\\api.csproj|solutionrelative:api\\models\\farm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{437F08C4-9206-4C76-A80D-26C054177A5C}|api\\api.csproj|c:\\users\\areni\\onedrive - kaunas university of technology\\ketvirtas kursas\\saitynai\\ukio_veiklu_stebejimo_sistema\\api\\dtos\\farm\\createfarmrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{437F08C4-9206-4C76-A80D-26C054177A5C}|api\\api.csproj|solutionrelative:api\\dtos\\farm\\createfarmrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{437F08C4-9206-4C76-A80D-26C054177A5C}|api\\api.csproj|c:\\users\\areni\\onedrive - kaunas university of technology\\ketvirtas kursas\\saitynai\\ukio_veiklu_stebejimo_sistema\\api\\controllers\\farmscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{437F08C4-9206-4C76-A80D-26C054177A5C}|api\\api.csproj|solutionrelative:api\\controllers\\farmscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{437F08C4-9206-4C76-A80D-26C054177A5C}|api\\api.csproj|c:\\users\\areni\\onedrive - kaunas university of technology\\ketvirtas kursas\\saitynai\\ukio_veiklu_stebejimo_sistema\\api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{437F08C4-9206-4C76-A80D-26C054177A5C}|api\\api.csproj|solutionrelative:api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{437F08C4-9206-4C76-A80D-26C054177A5C}|api\\api.csproj|c:\\users\\areni\\onedrive - kaunas university of technology\\ketvirtas kursas\\saitynai\\ukio_veiklu_stebejimo_sistema\\api\\auth\\model\\systemroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{437F08C4-9206-4C76-A80D-26C054177A5C}|api\\api.csproj|solutionrelative:api\\auth\\model\\systemroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{437F08C4-9206-4C76-A80D-26C054177A5C}|api\\api.csproj|c:\\users\\areni\\onedrive - kaunas university of technology\\ketvirtas kursas\\saitynai\\ukio_veiklu_stebejimo_sistema\\api\\auth\\model\\systemuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{437F08C4-9206-4C76-A80D-26C054177A5C}|api\\api.csproj|solutionrelative:api\\auth\\model\\systemuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{437F08C4-9206-4C76-A80D-26C054177A5C}|api\\api.csproj|c:\\users\\areni\\onedrive - kaunas university of technology\\ketvirtas kursas\\saitynai\\ukio_veiklu_stebejimo_sistema\\api\\dtos\\farm\\farmdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{437F08C4-9206-4C76-A80D-26C054177A5C}|api\\api.csproj|solutionrelative:api\\dtos\\farm\\farmdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{437F08C4-9206-4C76-A80D-26C054177A5C}|api\\api.csproj|c:\\users\\areni\\onedrive - kaunas university of technology\\ketvirtas kursas\\saitynai\\ukio_veiklu_stebejimo_sistema\\api\\helpers\\extension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{437F08C4-9206-4C76-A80D-26C054177A5C}|api\\api.csproj|solutionrelative:api\\helpers\\extension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,87 +79,195 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\api\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "api\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\api\\Properties\\launchSettings.json",
+              "RelativeToolTip": "api\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-08T12:45:26.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthEndpoints.cs",
+              "DocumentMoniker": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\api\\Auth\\AuthEndpoints.cs",
+              "RelativeDocumentMoniker": "api\\Auth\\AuthEndpoints.cs",
+              "ToolTip": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\api\\Auth\\AuthEndpoints.cs",
+              "RelativeToolTip": "api\\Auth\\AuthEndpoints.cs",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAgwK4AAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T14:52:06.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "JwtTokenService.cs",
+              "DocumentMoniker": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\api\\Auth\\JwtTokenService.cs",
+              "RelativeDocumentMoniker": "api\\Auth\\JwtTokenService.cs",
+              "ToolTip": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\api\\Auth\\JwtTokenService.cs",
+              "RelativeToolTip": "api\\Auth\\JwtTokenService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T14:45:13.255Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SessionService.cs",
+              "DocumentMoniker": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\api\\Auth\\SessionService.cs",
+              "RelativeDocumentMoniker": "api\\Auth\\SessionService.cs",
+              "ToolTip": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\api\\Auth\\SessionService.cs",
+              "RelativeToolTip": "api\\Auth\\SessionService.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T14:45:06.762Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "RecordsController.cs",
               "DocumentMoniker": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\api\\Controllers\\RecordsController.cs",
               "RelativeDocumentMoniker": "api\\Controllers\\RecordsController.cs",
               "ToolTip": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\api\\Controllers\\RecordsController.cs",
               "RelativeToolTip": "api\\Controllers\\RecordsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAwwJQAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T21:06:01.856Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T15:24:36.205Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "FieldsController.cs",
               "DocumentMoniker": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\api\\Controllers\\FieldsController.cs",
               "RelativeDocumentMoniker": "api\\Controllers\\FieldsController.cs",
               "ToolTip": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\api\\Controllers\\FieldsController.cs",
               "RelativeToolTip": "api\\Controllers\\FieldsController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAgwCYAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T21:00:26.039Z"
+              "WhenOpened": "2024-11-14T15:24:15.671Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Record.cs",
-              "DocumentMoniker": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\api\\Models\\Record.cs",
-              "RelativeDocumentMoniker": "api\\Models\\Record.cs",
-              "ToolTip": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\api\\Models\\Record.cs",
-              "RelativeToolTip": "api\\Models\\Record.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "FieldRepository.cs",
+              "DocumentMoniker": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\api\\Repository\\FieldRepository.cs",
+              "RelativeDocumentMoniker": "api\\Repository\\FieldRepository.cs",
+              "ToolTip": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\api\\Repository\\FieldRepository.cs",
+              "RelativeToolTip": "api\\Repository\\FieldRepository.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCMAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T20:58:12.55Z"
+              "WhenOpened": "2024-11-18T01:33:50.256Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "Field.cs",
               "DocumentMoniker": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\api\\Models\\Field.cs",
               "RelativeDocumentMoniker": "api\\Models\\Field.cs",
               "ToolTip": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\api\\Models\\Field.cs",
               "RelativeToolTip": "api\\Models\\Field.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T20:58:02.09Z"
+              "WhenOpened": "2024-11-18T01:53:45.609Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Farm.cs",
-              "DocumentMoniker": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\api\\Models\\Farm.cs",
-              "RelativeDocumentMoniker": "api\\Models\\Farm.cs",
-              "ToolTip": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\api\\Models\\Farm.cs",
-              "RelativeToolTip": "api\\Models\\Farm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T20:57:52.15Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "FarmsController.cs",
               "DocumentMoniker": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\api\\Controllers\\FarmsController.cs",
               "RelativeDocumentMoniker": "api\\Controllers\\FarmsController.cs",
               "ToolTip": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\api\\Controllers\\FarmsController.cs",
               "RelativeToolTip": "api\\Controllers\\FarmsController.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAIwB4AAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAowEwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T20:54:21.239Z"
+              "WhenOpened": "2024-11-11T00:00:30.443Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "api.csproj",
-              "DocumentMoniker": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\api\\api.csproj",
-              "RelativeDocumentMoniker": "api\\api.csproj",
-              "ToolTip": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\api\\api.csproj",
-              "RelativeToolTip": "api\\api.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-06T20:51:39.104Z"
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\api\\Program.cs",
+              "RelativeDocumentMoniker": "api\\Program.cs",
+              "ToolTip": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\api\\Program.cs",
+              "RelativeToolTip": "api\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T11:16:27.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "api.http",
+              "DocumentMoniker": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\api\\api.http",
+              "RelativeDocumentMoniker": "api\\api.http",
+              "ToolTip": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\api\\api.http",
+              "RelativeToolTip": "api\\api.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-12-07T14:24:11.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CreateFarmRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\api\\Dtos\\Farm\\CreateFarmRequestDto.cs",
+              "RelativeDocumentMoniker": "api\\Dtos\\Farm\\CreateFarmRequestDto.cs",
+              "ToolTip": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\api\\Dtos\\Farm\\CreateFarmRequestDto.cs",
+              "RelativeToolTip": "api\\Dtos\\Farm\\CreateFarmRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T15:51:10.007Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SystemRoles.cs",
+              "DocumentMoniker": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\api\\Auth\\Model\\SystemRoles.cs",
+              "RelativeDocumentMoniker": "api\\Auth\\Model\\SystemRoles.cs",
+              "ToolTip": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\api\\Auth\\Model\\SystemRoles.cs",
+              "RelativeToolTip": "api\\Auth\\Model\\SystemRoles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T00:11:10.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SystemUser.cs",
+              "DocumentMoniker": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\api\\Auth\\Model\\SystemUser.cs",
+              "RelativeDocumentMoniker": "api\\Auth\\Model\\SystemUser.cs",
+              "ToolTip": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\api\\Auth\\Model\\SystemUser.cs",
+              "RelativeToolTip": "api\\Auth\\Model\\SystemUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T17:12:27.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FarmDto.cs",
+              "DocumentMoniker": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\api\\Dtos\\Farm\\FarmDto.cs",
+              "RelativeDocumentMoniker": "api\\Dtos\\Farm\\FarmDto.cs",
+              "ToolTip": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\api\\Dtos\\Farm\\FarmDto.cs",
+              "RelativeToolTip": "api\\Dtos\\Farm\\FarmDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T16:36:05.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Extension.cs",
+              "DocumentMoniker": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\api\\Helpers\\Extension.cs",
+              "RelativeDocumentMoniker": "api\\Helpers\\Extension.cs",
+              "ToolTip": "C:\\Users\\areni\\OneDrive - Kaunas University of Technology\\Ketvirtas kursas\\Saitynai\\Ukio_veiklu_stebejimo_sistema\\api\\Helpers\\Extension.cs",
+              "RelativeToolTip": "api\\Helpers\\Extension.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T13:29:53.23Z"
             }
           ]
         }

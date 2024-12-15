@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using api.Auth.Model;
 using api.Dtos.Farm;
 using api.Models;
 
@@ -22,15 +23,20 @@ namespace api.Mappers
             };
         }
 
-        public static Farm ToFarmFromCreateDto(this CreateFarmRequestDto farmDto)
+        public static Farm ToFarmFromCreateDto(this CreateFarmRequestDto farmDto, string userId)
         {
-            return new Farm
+            Farm farm = new Farm
             {
                 Name = farmDto.Name,
                 HoldingNumber = farmDto.HoldingNumber,
                 YearOfFoundation = farmDto.YearOfFoundation,
-                Type = farmDto.Type
+                Type = farmDto.Type,
+                UserId = new List<string>(),
             };
+
+            farm.UserId.Add(userId);
+
+            return farm;
         }
     }
 }

@@ -11,6 +11,10 @@ using api.Interfaces;
 using api.Dtos.Record;
 using api.Mappers;
 using api.Repository;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authorization;
+using api.Auth.Model;
 
 namespace api.Controllers
 {
@@ -21,16 +25,19 @@ namespace api.Controllers
         private readonly IRecordRepository _recordRepo;
         private readonly IFieldRepository _fieldRepo;
         private readonly IFarmRepository _farmRepo;
+        private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public RecordsController(IRecordRepository recordRepo, IFieldRepository fieldRepo, IFarmRepository farmRepo)
+        public RecordsController(IRecordRepository recordRepo, IFieldRepository fieldRepo, IFarmRepository farmRepo, IHttpContextAccessor httpContextAccessor)
         {
             _recordRepo = recordRepo;
             _fieldRepo = fieldRepo;
             _farmRepo = farmRepo;
+            _httpContextAccessor = httpContextAccessor;
         }
 
         // GET: api/Farm/2/Fields
         [HttpGet]
+        [Authorize(Roles = $"{SystemRoles.Farmer},{SystemRoles.Worker}")]
         public async Task<ActionResult> GetRecords([FromRoute] int farmId, [FromRoute] int fieldId)
         {
             if(!ModelState.IsValid)
@@ -42,7 +49,12 @@ namespace api.Controllers
             if (!await _fieldRepo.FieldExists(fieldId))
                 return BadRequest("Field does not exist");
 
-            var records = await _recordRepo.GetAllAsync(fieldId, farmId);
+            var userId = _httpContextAccessor.HttpContext?.User.FindFirstValue(JwtRegisteredClaimNames.Sub);
+
+            if (userId == null)
+                return Unauthorized();
+
+            var records = await _recordRepo.GetAllAsync(fieldId, farmId, userId);
 
             if (records == null)
                 return NotFound();
@@ -54,6 +66,7 @@ namespace api.Controllers
 
         // GET: api/Fields/5
         [HttpGet("{id:int}")]
+        [Authorize(Roles = $"{SystemRoles.Farmer},{SystemRoles.Worker}")]
         public async Task<ActionResult> GetRecord([FromRoute] int id, [FromRoute] int farmId, [FromRoute] int fieldId)
         {
             if(!ModelState.IsValid)
@@ -65,7 +78,12 @@ namespace api.Controllers
             if (!await _fieldRepo.FieldExists(fieldId))
                 return BadRequest("Field does not exist");
 
-            var record = await _recordRepo.GetByIdAsync(id, fieldId, farmId);
+            var userId = _httpContextAccessor.HttpContext?.User.FindFirstValue(JwtRegisteredClaimNames.Sub);
+
+            if (userId == null)
+                return Unauthorized();
+
+            var record = await _recordRepo.GetByIdAsync(id, fieldId, farmId, userId);
 
             if (record == null)
                 return NotFound();
@@ -77,6 +95,7 @@ namespace api.Controllers
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut]
         [Route("{id:int}")]
+        [Authorize(Roles = $"{SystemRoles.Farmer},{SystemRoles.Worker}")]
         public async Task<IActionResult> PutRecord([FromRoute] int id, [FromBody] UpdateRecordRequestDto recordDto, [FromRoute] int farmId, [FromRoute] int fieldId)
         {
             if(!ModelState.IsValid)
@@ -87,8 +106,13 @@ namespace api.Controllers
 
             if (!await _fieldRepo.FieldExists(fieldId))
                 return BadRequest("Field does not exist");
-            
-            var record = await _recordRepo.UpdateAsync(id, recordDto.ToRecordFromUpdate(), fieldId, farmId);
+
+            var userId = _httpContextAccessor.HttpContext?.User.FindFirstValue(JwtRegisteredClaimNames.Sub);
+
+            if (userId == null)
+                return Unauthorized();
+
+            var record = await _recordRepo.UpdateAsync(id, recordDto.ToRecordFromUpdate(userId), fieldId, farmId, userId);
             
             if (record == null)
                 return NotFound("Record not found");
@@ -99,6 +123,7 @@ namespace api.Controllers
         // POST: api/Fields
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
+        [Authorize(Roles = $"{SystemRoles.Farmer},{SystemRoles.Worker}")]
         public async Task<IActionResult> PostRecord([FromRoute] int fieldId, [FromBody] CreateRecordDto recordDto, [FromRoute] int farmId)
         {
             if(!ModelState.IsValid)
@@ -110,12 +135,18 @@ namespace api.Controllers
             if (!await _fieldRepo.FieldExists(fieldId))
                 return BadRequest("Field does not exist");
 
-            if (await _fieldRepo.GetByIdAsync(fieldId, farmId) == null)
+            var userId = _httpContextAccessor.HttpContext?.User.FindFirstValue(JwtRegisteredClaimNames.Sub);
+
+            if (userId == null)
+                return Unauthorized();
+
+            if (await _fieldRepo.GetByIdAsync(fieldId, farmId, userId) == null)
                 return BadRequest("Field does not exist");
 
-            var record = recordDto.ToRecordFromCreate(fieldId);
+            var record = recordDto.ToRecordFromCreate(fieldId, userId);
 
-            await _recordRepo.CreateAsync(record, fieldId, farmId);
+            if (await _recordRepo.CreateAsync(record, fieldId, farmId, userId) == null)
+                return NotFound();
 
             return CreatedAtAction("GetRecord", new { id = record.Id, farmId, fieldId }, record.ToRecordDto());
         }
@@ -123,6 +154,7 @@ namespace api.Controllers
         // DELETE: api/Fields/5
         [HttpDelete]
         [Route("{id:int}")]
+        [Authorize(Roles = $"{SystemRoles.Farmer},{SystemRoles.Worker}")]
         public async Task<IActionResult> DeleteRecord([FromRoute] int id, [FromRoute] int fieldId, [FromRoute] int farmId)
         {
             if(!ModelState.IsValid)
@@ -134,7 +166,12 @@ namespace api.Controllers
             if (!await _fieldRepo.FieldExists(fieldId))
                 return BadRequest("Field does not exist");
 
-            var record = await _recordRepo.DeleteAsync(id, fieldId, farmId);
+            var userId = _httpContextAccessor.HttpContext?.User.FindFirstValue(JwtRegisteredClaimNames.Sub);
+
+            if (userId == null)
+                return Unauthorized();
+
+            var record = await _recordRepo.DeleteAsync(id, fieldId, farmId, userId);
 
             if (record == null)
                 return NotFound("Record does not exist");

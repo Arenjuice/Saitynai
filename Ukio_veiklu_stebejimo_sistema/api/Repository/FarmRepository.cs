@@ -25,11 +25,16 @@ namespace api.Repository
             return farm;
         }
 
-        public async Task<Farm?> DeleteAsync(int id)
+        public async Task<Farm?> DeleteAsync(int id, string userId)
         {
             var farm = await _context.Farms.Include(f => f.Fields).FirstOrDefaultAsync(x => x.Id == id);
 
             if (farm == null || farm.Fields.Count > 0)
+            {
+                return null;
+            }
+
+            if (!farm.UserId.Contains(userId))
             {
                 return null;
             }
@@ -49,16 +54,33 @@ namespace api.Repository
             return await _context.Farms.Include(c => c.Fields).ToListAsync();
         }
 
-        public async Task<Farm?> GetByIdAsync(int id)
+        public async Task<Farm?> GetByIdAsync(int id, string userId)
         {
-            return await _context.Farms.Include(c => c.Fields).FirstOrDefaultAsync(i => i.Id == id);
+            var farm = await _context.Farms.Include(c => c.Fields).FirstOrDefaultAsync(i => i.Id == id);
+
+            if (farm == null)
+            {
+                return null;
+            }
+
+            if (!farm.UserId.Contains(userId))
+            {
+                return null;
+            }
+
+            return farm;
         }
 
-        public async Task<Farm?> UpdateAsync(int id, UpdateFarmRequestDto farmDto)
+        public async Task<Farm?> UpdateAsync(int id, UpdateFarmRequestDto farmDto, string userId)
         {
             var farm = await _context.Farms.FirstOrDefaultAsync(x => x.Id == id);
 
             if (farm == null)
+            {
+                return null;
+            }
+
+            if (!farm.UserId.Contains(userId))
             {
                 return null;
             }

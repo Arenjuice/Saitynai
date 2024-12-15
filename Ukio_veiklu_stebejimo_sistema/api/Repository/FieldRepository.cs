@@ -19,15 +19,39 @@ namespace api.Repository
             _context = context;
         }
 
-        public async Task<Field> CreateAsync(Field field)
+        public async Task<Field> CreateAsync(Field field, string userId)
         {
+            var farm = await _context.Farms.Include(f => f.Fields).FirstOrDefaultAsync(x => x.Id == field.FarmId);
+
+            if (farm == null)
+            {
+                return null;
+            }
+
+            if (!farm.UserId.Contains(userId))
+            {
+                return null;
+            }
+
             await _context.Fields.AddAsync(field);
             await _context.SaveChangesAsync();
             return field;
         }
 
-        public async Task<Field?> DeleteAsync(int id, int farmId)
+        public async Task<Field?> DeleteAsync(int id, int farmId, string userId)
         {
+            var farm = await _context.Farms.Include(f => f.Fields).FirstOrDefaultAsync(x => x.Id == farmId);
+
+            if (farm == null)
+            {
+                return null;
+            }
+
+            if (!farm.UserId.Contains(userId))
+            {
+                return null;
+            }
+
             var field = await _context.Fields.Where(x => x.FarmId == farmId).Include(c => c.Records).FirstOrDefaultAsync(x => x.Id == id);
 
             if (field == null || field.Records.Count > 0)
@@ -46,18 +70,58 @@ namespace api.Repository
             return await _context.Fields.AnyAsync(s => s.Id == id);
         }
 
-        public async Task<List<Field>> GetAllAsync(int farmId)
+        public async Task<List<Field>> GetAllAsync(int farmId, string userId)
         {
-            return await _context.Fields.Where(x => x.FarmId == farmId).Include(c => c.Records).ToListAsync();
+            var farm = await _context.Farms.Include(f => f.Fields).FirstOrDefaultAsync(x => x.Id == farmId);
+
+            if (farm == null)
+            {
+                return null;
+            }
+
+            if (!farm.UserId.Contains(userId))
+            {
+                return null;
+            }
+
+            var fields = await _context.Fields.Where(x => x.FarmId == farmId).Include(c => c.Records).ToListAsync();
+
+            return fields;
         }
 
-        public async Task<Field?> GetByIdAsync(int id, int farmId)
+        public async Task<Field?> GetByIdAsync(int id, int farmId, string userId)
         {
-            return await _context.Fields.Where(x => x.FarmId == farmId).Include(c => c.Records).FirstOrDefaultAsync(i => i.Id == id);
+            var farm = await _context.Farms.Include(f => f.Fields).FirstOrDefaultAsync(x => x.Id == farmId);
+
+            if (farm == null)
+            {
+                return null;
+            }
+
+            if (!farm.UserId.Contains(userId))
+            {
+                return null;
+            }
+
+            var field = await _context.Fields.Where(x => x.FarmId == farmId).Include(c => c.Records).FirstOrDefaultAsync(i => i.Id == id);
+
+            return field;
         }
 
-        public async Task<Field?> UpdateAsync(int id, Field field, int farmId)
+        public async Task<Field?> UpdateAsync(int id, Field field, int farmId, string userId)
         {
+            var farm = await _context.Farms.Include(f => f.Fields).FirstOrDefaultAsync(x => x.Id == farmId);
+
+            if (farm == null)
+            {
+                return null;
+            }
+
+            if (!farm.UserId.Contains(userId))
+            {
+                return null;
+            }
+
             var existingField = await _context.Fields.Where(x => x.FarmId == farmId).FirstOrDefaultAsync(i => i.Id == id);
 
             if(existingField == null)

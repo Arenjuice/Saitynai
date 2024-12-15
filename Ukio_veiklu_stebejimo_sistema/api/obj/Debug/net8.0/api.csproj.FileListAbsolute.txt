@@ -254,3 +254,15 @@ C:\Users\areni\OneDrive - Kaunas University of Technology\Ketvirtas kursas\Saity
 C:\Users\areni\OneDrive - Kaunas University of Technology\Ketvirtas kursas\Saitynai\Ukio_veiklu_stebejimo_sistema\api\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\areni\OneDrive - Kaunas University of Technology\Ketvirtas kursas\Saitynai\Ukio_veiklu_stebejimo_sistema\api\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\areni\OneDrive - Kaunas University of Technology\Ketvirtas kursas\Saitynai\Ukio_veiklu_stebejimo_sistema\api\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+C:\Users\areni\OneDrive - Kaunas University of Technology\Ketvirtas kursas\Saitynai\Ukio_veiklu_stebejimo_sistema\api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\areni\OneDrive - Kaunas University of Technology\Ketvirtas kursas\Saitynai\Ukio_veiklu_stebejimo_sistema\api\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\areni\OneDrive - Kaunas University of Technology\Ketvirtas kursas\Saitynai\Ukio_veiklu_stebejimo_sistema\api\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\areni\OneDrive - Kaunas University of Technology\Ketvirtas kursas\Saitynai\Ukio_veiklu_stebejimo_sistema\api\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\areni\OneDrive - Kaunas University of Technology\Ketvirtas kursas\Saitynai\Ukio_veiklu_stebejimo_sistema\api\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\areni\OneDrive - Kaunas University of Technology\Ketvirtas kursas\Saitynai\Ukio_veiklu_stebejimo_sistema\api\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\areni\OneDrive - Kaunas University of Technology\Ketvirtas kursas\Saitynai\Ukio_veiklu_stebejimo_sistema\api\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\areni\OneDrive - Kaunas University of Technology\Ketvirtas kursas\Saitynai\Ukio_veiklu_stebejimo_sistema\api\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\areni\OneDrive - Kaunas University of Technology\Ketvirtas kursas\Saitynai\Ukio_veiklu_stebejimo_sistema\api\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\areni\OneDrive - Kaunas University of Technology\Ketvirtas kursas\Saitynai\Ukio_veiklu_stebejimo_sistema\api\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\areni\OneDrive - Kaunas University of Technology\Ketvirtas kursas\Saitynai\Ukio_veiklu_stebejimo_sistema\api\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\areni\OneDrive - Kaunas University of Technology\Ketvirtas kursas\Saitynai\Ukio_veiklu_stebejimo_sistema\api\bin\Debug\net8.0\Microsoft.Extensions.Options.dll

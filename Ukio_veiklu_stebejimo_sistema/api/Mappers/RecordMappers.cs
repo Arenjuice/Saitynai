@@ -22,7 +22,7 @@ namespace api.Mappers
             };
         }
 
-        public static Record ToRecordFromCreate(this CreateRecordDto recordDto, int fieldId)
+        public static Record ToRecordFromCreate(this CreateRecordDto recordDto, int fieldId, string userId)
         {
             return new Record
             {
@@ -30,11 +30,12 @@ namespace api.Mappers
                 Type = recordDto.Type,
                 Description = recordDto.Description,
                 Date = recordDto.Date,
-                FieldId = fieldId
+                FieldId = fieldId,
+                UserId = userId
             };
         }
 
-        public static Record ToRecordFromUpdate(this UpdateRecordRequestDto recordDto)
+        public static Record ToRecordFromUpdate(this UpdateRecordRequestDto recordDto, string userId)
         {
             return new Record
             {
@@ -42,6 +43,7 @@ namespace api.Mappers
                 Type = recordDto.Type,
                 Date = recordDto.Date,
                 Description = recordDto.Description,
+                UserId = userId
             };
         }
     }

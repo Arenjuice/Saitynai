@@ -1,5 +1,7 @@
+using api.Auth.Model;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -17,5 +19,9 @@ namespace api.Models
         public decimal Perimeter { get; set; }
         public decimal Area { get; set; }
         public List<Record> Records { get; set; } = new List<Record>();
+
+        [Required]
+        public required string UserId { get; set; }
+        public SystemUser? User { get; set; }
     }
 }

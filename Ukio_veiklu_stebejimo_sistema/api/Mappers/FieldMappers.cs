@@ -26,7 +26,7 @@ namespace api.Mappers
             };
         }
 
-        public static Field ToFieldFromCreate(this CreateFieldDto fieldDto, int farmId)
+        public static Field ToFieldFromCreate(this CreateFieldDto fieldDto, int farmId, string userId)
         {
             return new Field
             {
@@ -36,11 +36,12 @@ namespace api.Mappers
                 CropSubgroup = fieldDto.CropSubgroup,
                 Perimeter = fieldDto.Perimeter,
                 Area = fieldDto.Area,
-                FarmId = farmId
+                FarmId = farmId,
+                UserId = userId
             };
         }
 
-        public static Field ToFieldFromUpdate(this UpdateFieldRequestDto fieldDto)
+        public static Field ToFieldFromUpdate(this UpdateFieldRequestDto fieldDto, string userId)
         {
             return new Field
             {
@@ -49,7 +50,8 @@ namespace api.Mappers
                 CropGroupName = fieldDto.CropGroupName,
                 CropSubgroup = fieldDto.CropSubgroup,
                 Perimeter = fieldDto.Perimeter,
-                Area = fieldDto.Area
+                Area = fieldDto.Area,
+                UserId = userId
             };
         }
     }

@@ -10,11 +10,11 @@ namespace api.Interfaces
 {
     public interface IFieldRepository
     {
-        Task<List<Field>> GetAllAsync(int farmId);
-        Task<Field?> GetByIdAsync(int id, int farmId);
-        Task<Field> CreateAsync(Field field);
-        Task<Field?> UpdateAsync(int id, Field field, int farmId);
-        Task<Field?> DeleteAsync(int id, int farmId);
+        Task<List<Field>> GetAllAsync(int farmId, string userId);
+        Task<Field?> GetByIdAsync(int id, int farmId, string userId);
+        Task<Field> CreateAsync(Field field, string userId);
+        Task<Field?> UpdateAsync(int id, Field field, int farmId, string userId);
+        Task<Field?> DeleteAsync(int id, int farmId, string userId);
         Task<bool> FieldExists(int id);
     }
 }

@@ -1,5 +1,87 @@
 [
   {
+    "ContainingType": "api.Auth.AuthEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CAddAuthApi\u003Eb__0_4",
+    "RelativePath": "api/accessToken",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "api.Auth.AuthEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CAddAuthApi\u003Eb__0_0",
+    "RelativePath": "api/accounts",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "api.Auth.RegisterUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "api.Auth.AuthEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CAddAuthApi\u003Eb__0_1",
+    "RelativePath": "api/addFarmerRole",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "api.Auth.AddFarmerRole",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "api.Auth.AuthEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CAddAuthApi\u003Eb__0_2",
+    "RelativePath": "api/addWorkerRole",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "api.Auth.AddWorkerRole",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "api.Controllers.FarmsController",
     "Method": "GetFarms",
     "RelativePath": "api/Farms",
@@ -322,5 +404,43 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api.Auth.AuthEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CAddAuthApi\u003Eb__0_3",
+    "RelativePath": "api/login",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "api.Auth.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "api.Auth.AuthEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CAddAuthApi\u003Eb__0_5",
+    "RelativePath": "api/logout",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

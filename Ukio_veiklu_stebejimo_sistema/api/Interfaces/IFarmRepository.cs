@@ -10,10 +10,10 @@ namespace api.Interfaces
     public interface IFarmRepository
     {
         Task<List<Farm>> GetAllAsync();
-        Task<Farm?> GetByIdAsync(int id); 
+        Task<Farm?> GetByIdAsync(int id, string userId); 
         Task<Farm> CreateAsync(Farm farm);
-        Task<Farm?> UpdateAsync(int id, UpdateFarmRequestDto farmDto);
-        Task<Farm?> DeleteAsync(int id);
+        Task<Farm?> UpdateAsync(int id, UpdateFarmRequestDto farmDto, string userId);
+        Task<Farm?> DeleteAsync(int id, string userId);
         Task<bool> FarmExists(int id);
     }
 }
