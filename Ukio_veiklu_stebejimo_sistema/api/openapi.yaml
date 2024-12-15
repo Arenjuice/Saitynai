@@ -5,7 +5,7 @@ info:
   version: 1.0.0
 
 servers:
-  - url: http://localhost:5145
+  - url: https://ukioapi.azurewebsites.net/
 
 paths:
   /Farms:
@@ -27,18 +27,20 @@ paths:
                 - id: 1
                   name: "Jono ūkis"
                   holdingNumber: "012589"
-                  yearOfFoundation: "2020/02/05"
+                  yearOfFoundation: "2020-02-05"
                   type: "Gyvulininkystės ūkis"
                 - id: 2
                   name: "Šilutės bendrovė"
                   holdingNumber: "099589"
-                  yearOfFoundation: "2000/06/02"
+                  yearOfFoundation: "2000-06-02"
                   type: "Mišrus ūkis"
     post:
       description: "Create a farm"
       tags:
         - farm
       operationId: PostFarm
+      security:
+        - bearerAuth: []
       requestBody:
         content:
           application/json:
@@ -57,7 +59,7 @@ paths:
         "422":
           $ref: "#/components/responses/unprocessableEntity"
 
-  /farms/{farmId}:
+  /Farms/{farmId}:
     parameters:
       - $ref: '#/components/parameters/farmId'
     get:
@@ -65,6 +67,8 @@ paths:
       tags:
         - farm
       operationId: GetFarm
+      security:
+        - bearerAuth: []
       responses:
         "200":
           $ref: "#/components/responses/singleFarm"
@@ -75,6 +79,8 @@ paths:
       tags:
         - farm
       operationId: PutFarm
+      security:
+        - bearerAuth: []
       requestBody:
         content:
           application/json:
@@ -99,6 +105,8 @@ paths:
       tags:
         - farm
       operationId: DeleteFarm
+      security:
+        - bearerAuth: []
       responses:
         "404":
           $ref: "#/components/responses/notFound"
@@ -112,6 +120,8 @@ paths:
       tags:
         - field
       operationId: GetFields
+      security:
+        - bearerAuth: []
       responses:
         "200":
           description: List of fields
@@ -132,6 +142,8 @@ paths:
       tags:
         - field
       operationId: GetField
+      security:
+        - bearerAuth: []
       responses:
         "200":
           description: A single field
@@ -140,6 +152,8 @@ paths:
       tags:
         - field
       operationId: PutField
+      security:
+        - bearerAuth: []
       responses:
         "200":
           description: Updated field
@@ -148,6 +162,8 @@ paths:
       tags:
         - field
       operationId: DeleteField
+      security:
+        - bearerAuth: []
       responses:
         "204":
           description: Field deleted
@@ -160,6 +176,8 @@ paths:
       tags:
         - record
       operationId: GetRecords
+      security:
+        - bearerAuth: []
       responses:
         "200":
           description: List of records
@@ -168,6 +186,8 @@ paths:
       tags:
         - record
       operationId: PostRecord
+      security:
+        - bearerAuth: []
       responses:
         "201":
           description: OK
@@ -181,6 +201,8 @@ paths:
       tags:
         - record
       operationId: GetRecord
+      security:
+        - bearerAuth: []
       responses:
         "200":
           description: A single record
@@ -197,10 +219,17 @@ paths:
       tags:
         - record
       operationId: DeleteRecord
+      security:
+        - bearerAuth: []
       responses:
         "204":
           description: Record deleted
 components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
   schemas:
     Farm:
       type: object
